@@ -33,7 +33,7 @@
       animation: fadeIn 2s ease;
     }
 
-    .slider-container {
+    .slider-wrapper {
       position: relative;
       width: 100%;
       max-width: 1000px;
@@ -56,9 +56,11 @@
       flex-shrink: 0;
     }
 
-    .prev, .next {
+    .slider-wrapper .slide-button {
       position:  absolute ;
       top: 50%;
+      height: 50px 
+      width: 50px
       transform: translateY(+50%);
       font-size: 24px;
       background: rgba(0,0,0,0.4);
@@ -67,7 +69,7 @@
       padding: 15px;
       border-radius: 50%;
       cursor: pointer;
-      z-index: 2;
+      z-index: 1;
     }
 
     .prev { left: 10px; }
@@ -104,7 +106,7 @@
 
   <div class="section">
     <h2>Birthday Girl 👑</h2>
-    <div class="slider">
+    <div class="slider-wrapper">
       <div class="slider" id="slider">
         <img src="slide1.jpg" alt="Slide 1">
         <img src="slide2.jpg" alt="Slide 2">
